@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krushna Pundlik Kale | Enterprise Systems Architect</title>
+    <title>Krushna Pundlik Kale | Senior Backend Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#systems" class="nav-link">Systems</a></li>
+                <li><a href="#case-study" class="nav-link">Case Study</a></li>
                 <li><a href="#expertise" class="nav-link">Expertise</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -35,16 +36,15 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Enterprise Systems Architect</h1>
-                <p class="hero-subtitle">Architecting integration-heavy enterprise systems where data integrity, auditability, and reliability are non-negotiable
-</p>
+                <h1 class="hero-title">Senior Backend Engineer</h1>
+                <p class="hero-subtitle">Spring Boot | Enterprise Integrations | Data Pipelines</p>
                 <p class="hero-description">
-                    6+ years of deep expertise in designing and architecting integration systems for enterprise environments. 
-                    Specialized in handling large-scale data workflows, compliance-driven architectures, and production-grade reliability.
+                    6+ years building robust Java & Spring Boot backend systems. 
+                    I specialize in complex, integration-heavy enterprise environments, real-time data pipelines, and distributed architectures where data integrity and system reliability are non-negotiable.
                 </p>
                 <div class="hero-cta">
-                    <a href="#systems" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#systems" class="btn btn-primary">View Systems</a>
+                    <a href="#case-study" class="btn btn-secondary">View Case Study</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -59,35 +59,36 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Professional Profile</h2>
+            <h2 class="section-title">Engineering Philosophy</h2>
+            <p class="section-subtitle" style="margin-bottom: 2rem;">"I design systems where data cannot fail, and work on integration boundaries where most systems break."</p>
             <div class="about-grid">
                 <div class="about-card">
                     <div class="card-icon">
                         <i class="fas fa-cube"></i>
                     </div>
-                    <h3>System Architecture</h3>
-                    <p>Design and implement scalable enterprise architectures with focus on data integrity, auditability, and production reliability.</p>
+                    <h3>Backend Architecture</h3>
+                    <p>Building high-performance APIs and microservices in Spring Boot. I focus on clean domain models, dependency injection, and scalable enterprise patterns.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
-                        <i class="fas fa-link"></i>
+                        <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3>Integration Expert</h3>
-                    <p>Specialized in integrating complex laboratory and analytical systems with enterprise platforms. Handle file-based, hardware-adjacent workflows under enterprise constraints.</p>
+                    <h3>Integration Boundaries</h3>
+                    <p>Connecting disparate hardware and software systems. Extensive experience with device communication, file workflows, and robust error recovery.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-database"></i>
                     </div>
-                    <h3>Data Safety</h3>
-                    <p>Build defensive integrations with immutable schemas, audit trails, and compliance-ready data models for regulated environments.</p>
+                    <h3>Data Integrity & Schemas</h3>
+                    <p>Designing immutable schemas and audit trails in PostgreSQL. I build resilient pipelines capable of safe schema evolution and backward-compatible migrations.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-bug"></i>
                     </div>
-                    <h3>Production Mastery</h3>
-                    <p>Debug production issues spanning OS, application, and database layers. Ensure backward compatibility and zero-downtime deployments.</p>
+                    <h3>Production Debugging</h3>
+                    <p>Deep-diving into complex production issues. From character encoding mismatches in streams to OS-level file locking and connection pooling bottlenecks.</p>
                 </div>
             </div>
         </div>
@@ -110,16 +111,19 @@
                     </div>
                     <div class="system-body">
                         <p class="system-type">Chromatography Data System</p>
-                        <ul class="system-features">
-                            <li>Sequence execution data integration</li>
-                            <li>Large payload handling (method & sequence data)</li>
-                            <li>ZIP-based method file processing</li>
-                            <li>Windows network drive integration</li>
-                            <li>Full audit metadata & traceability</li>
-                        </ul>
+                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Bridging a Java enterprise backend with Chromeleon's native .NET SDK to extract complex injection data in real-time.</p>
+                            
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Architected a resilient microservice bridge that consumes the .NET SDK and streams results via a message broker.</p>
+
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Ensured 21 CFR Part 11 compliance by mapping native audit trails directly into the enterprise database.</p>
+                        </div>
                         <div class="system-stats">
-                            <span class="stat">1000+ Sequences</span>
-                            <span class="stat">Real-time Sync</span>
+                            <span class="stat">.NET SDK Bridge</span>
+                            <span class="stat">Part 11 Compliant</span>
                         </div>
                     </div>
                 </div>
@@ -134,16 +138,19 @@
                     </div>
                     <div class="system-body">
                         <p class="system-type">Analytical Lab System</p>
-                        <ul class="system-features">
-                            <li>Multi-vendor CDS abstraction</li>
-                            <li>Normalized data semantics</li>
-                            <li>Extensible schema design</li>
-                            <li>Vendor-agnostic architecture</li>
-                            <li>Seamless data integration</li>
-                        </ul>
+                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Consuming hierarchical analytical data (Projects, Sample Sets, Channels) from Waters Empower's legacy COM-based Toolkit API.</p>
+                            
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Developed an asynchronous integration layer to safely query the Empower Toolkit without blocking core Java threads.</p>
+
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Implemented token-bucket rate limiting to prevent overloading the Empower database during large, historical data pulls.</p>
+                        </div>
                         <div class="system-stats">
-                            <span class="stat">Multi-Vendor</span>
-                            <span class="stat">Extensible</span>
+                            <span class="stat">Empower Toolkit API</span>
+                            <span class="stat">Async Polling</span>
                         </div>
                     </div>
                 </div>
@@ -158,16 +165,19 @@
                     </div>
                     <div class="system-body">
                         <p class="system-type">Hardware Instrument Integration</p>
-                        <ul class="system-features">
-                            <li>Measurement data capture</li>
-                            <li>Accuracy preservation</li>
-                            <li>Timestamp correctness</li>
-                            <li>Compliance-ready storage</li>
-                            <li>Data immutability enforcement</li>
-                        </ul>
+                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Capturing precise measurements over TCP/IP using protocols like MT-SICS, dealing with unstable connections and continuous data streams.</p>
+                            
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Engineered a Netty-based socket listener in Spring Boot to buffer, frame, and parse proprietary instrument telemetry continuously.</p>
+
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Preserved raw byte-streams alongside parsed values to satisfy ALCOA+ data integrity principles in regulated labs.</p>
+                        </div>
                         <div class="system-stats">
-                            <span class="stat">Accuracy-Critical</span>
-                            <span class="stat">Compliant</span>
+                            <span class="stat">Netty TCP/IP</span>
+                            <span class="stat">ALCOA+ Integrity</span>
                         </div>
                     </div>
                 </div>
@@ -182,16 +192,19 @@
                     </div>
                     <div class="system-body">
                         <p class="system-type">Analytical Instrument Data</p>
-                        <ul class="system-features">
-                            <li>Measurement data ingestion</li>
-                            <li>Context-rich storage</li>
-                            <li>Experiment linking</li>
-                            <li>User & timestamp tracking</li>
-                            <li>Audit trail enforcement</li>
-                        </ul>
+                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Parsing heterogeneous serial (RS232/USB) and TCP outputs from various pH meter models, handling encoding anomalies.</p>
+                            
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Implemented a fault-tolerant communication module that normalizes different vendor formats into a unified JSON event stream.</p>
+
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Designed a WebSocket bridge to push live pH readings and calibration statuses directly to the scientist's browser session.</p>
+                        </div>
                         <div class="system-stats">
-                            <span class="stat">Context-Rich</span>
-                            <span class="stat">Auditable</span>
+                            <span class="stat">RS232 / TCP</span>
+                            <span class="stat">WebSocket Push</span>
                         </div>
                     </div>
                 </div>
@@ -205,17 +218,20 @@
                         <h3>ARD Enterprise</h3>
                     </div>
                     <div class="system-body">
-                        <p class="system-type">Core Business Platform</p>
-                        <ul class="system-features">
-                            <li>Template-driven data ingestion</li>
-                            <li>1000+ Excel sheet management</li>
-                            <li>Immutable template design</li>
-                            <li>Regulated data flows</li>
-                            <li>Complex domain rule enforcement</li>
-                        </ul>
+                        <p class="system-type">Analytical Research Data System</p>
+                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Ingesting unstructured scientific experimental data from scientists using hundreds of distinct, macro-heavy Excel templates.</p>
+                            
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Architected a metadata-driven ingestion engine utilizing Apache POI to map spreadsheet structures to a normalized relational schema.</p>
+
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Decoupled parsing logic from core rules via strategy patterns, allowing templates to evolve without backend code deployments.</p>
+                        </div>
                         <div class="system-stats">
-                            <span class="stat">1000+ Templates</span>
-                            <span class="stat">Regulated</span>
+                            <span class="stat">Apache POI</span>
+                            <span class="stat">Metadata-Driven</span>
                         </div>
                     </div>
                 </div>
@@ -229,17 +245,20 @@
                         <h3>File-System Workflows</h3>
                     </div>
                     <div class="system-body">
-                        <p class="system-type">Enterprise File Processing</p>
-                        <ul class="system-features">
-                            <li>ZIP-based file handling</li>
-                            <li>Network drive integration</li>
-                            <li>Windows file lock management</li>
-                            <li>Batch processing automation</li>
-                            <li>Error recovery mechanisms</li>
-                        </ul>
+                        <p class="system-type">Legacy Instrument Integration</p>
+                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Integrating legacy lab equipment that lack APIs, outputting proprietary formats (CSV/XML/PDF) to SMB/CIFS network drives.</p>
+                            
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Built a distributed file polling orchestrator using Java NIO.2 and Quartz Scheduler, equipped with advanced file-lock detection.</p>
+
+                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Implemented a state-machine pattern for file lifecycle tracking, ensuring exactly-once processing and secure chain of custody.</p>
+                        </div>
                         <div class="system-stats">
-                            <span class="stat">Automated</span>
-                            <span class="stat">Resilient</span>
+                            <span class="stat">Java NIO.2</span>
+                            <span class="stat">State Machine</span>
                         </div>
                     </div>
                 </div>
@@ -253,71 +272,122 @@
             <h2 class="section-title">Technical Expertise</h2>
             
             <div class="expertise-grid">
-                <div class="expertise-column">
-                    <h3 class="expertise-category">Backend Development</h3>
+                <div class="expertise-column" style="border-top: 4px solid var(--primary); transform: scale(1.02); box-shadow: 0 10px 30px rgba(0, 102, 204, 0.1);">
+                    <h3 class="expertise-category"><i class="fas fa-server"></i> Backend Engineering</h3>
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">Java & Spring Boot</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 98%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs & Microservices</span>
                             <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">REST API Design & Versioning</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 93%"></div></div>
+                            <span class="skill-name">System Integration (Hardware/Software)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 96%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Entity Modeling & Schema Design</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 94%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Integration Architecture</span>
+                            <span class="skill-name">Real-time Data Processing</span>
                             <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="expertise-column">
-                    <h3 class="expertise-category">Database & Data</h3>
+                    <h3 class="expertise-category"><i class="fas fa-database"></i> Database & Architecture</h3>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <span class="skill-name">PostgreSQL (Advanced)</span>
+                            <span class="skill-name">PostgreSQL</span>
                             <div class="skill-bar"><div class="skill-fill" style="width: 94%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Schema Evolution & Migrations</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 91%"></div></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Data Integrity & Normalization</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 93%"></div></div>
+                            <span class="skill-name">Entity Modeling & Optimization</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">MySQL & Configuration Tuning</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                            <span class="skill-name">Audit Trails & Immutability</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="expertise-column">
-                    <h3 class="expertise-category">Frontend & DevOps</h3>
+                    <h3 class="expertise-category"><i class="fas fa-network-wired"></i> Workflows & Frontend</h3>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <span class="skill-name">Angular & TypeScript</span>
+                            <span class="skill-name">File-System Workflows (ZIP, Network)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Device Communication (TCP/RS232)</span>
                             <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">NGINX Configuration</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">SSL/TLS & Security</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 87%"></div></div>
-                        </div>
-                        <div class="skill-item">
                             <span class="skill-name">Production Debugging</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item" style="opacity: 0.8;">
+                            <span class="skill-name">Angular & Web UI</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%; background: var(--border);"></div></div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Case Study Section -->
+    <section id="case-study" class="case-study" style="padding: 100px 0; background: white;">
+        <div class="container">
+            <h2 class="section-title">Engineering Case Study</h2>
+            <p class="section-subtitle">Deep Dive: Resilient Enterprise CDS Integration (Chromeleon & Empower)</p>
+            
+            <div class="case-study-content" style="max-width: 900px; margin: 0 auto; background: var(--card-bg); padding: 3rem; border-radius: 12px; border: 1px solid var(--border); border-left: 5px solid var(--primary);">
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-fire" style="margin-right: 8px;"></i> The Problem & Context</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.7;">
+                        The enterprise LIMS/ELN needed to synchronize tens of thousands of Sample Sets and analytical Injections from both Thermo Chromeleon and Waters Empower systems. Directly querying these proprietary ecosystems from a monolithic Java backend led to thread starvation, COM bridge crashes, and severe database connection bottlenecks.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-anchor" style="margin-right: 8px;"></i> Constraints</h3>
+                    <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.5rem;">
+                        <li><strong>Proprietary APIs:</strong> Limited to the native .NET Chromeleon SDK and the legacy COM-based Empower Toolkit.</li>
+                        <li><strong>Compliance:</strong> Zero data loss and strict 21 CFR Part 11 compliance (audit trails, signatures) were legally mandatory.</li>
+                        <li><strong>Performance:</strong> Data extraction could not impact the performance of active laboratory instruments communicating with the CDS servers.</li>
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i> Architecture & Approach</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.7;">
+                        I architected an <strong>event-driven integration pipeline</strong>. We deployed lightweight, native bridging microservices (C#/.NET) that securely authenticated and queried the vendor SDKs. These services translated proprietary data models into an agnostic canonical schema, publishing JSON events to an enterprise message broker (RabbitMQ/Kafka) consumed asynchronously by our Spring Boot backend.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-bolt" style="margin-right: 8px;"></i> Key Engineering Challenges Resolved</h3>
+                    <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.5rem;">
+                        <li><strong>Rate Limiting & Backpressure:</strong> Implemented token-bucket rate limiting on the bridge services to ensure legacy CDS databases were never overwhelmed during bulk historical data extractions.</li>
+                        <li><strong>Fault Isolation:</strong> Eliminated JVM crashes caused by native JNI/COM failures by offloading SDK communication to isolated microservices.</li>
+                        <li><strong>Atomicity:</strong> Configured transactional messaging; if an injection payload failed validation in Spring Boot, the event was routed to a Dead Letter Queue (DLQ) for manual triage without halting the pipeline.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-chart-line" style="margin-right: 8px;"></i> Outcome</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.7; font-weight: 500;">
+                        The decoupled pipeline successfully processed over 10,000+ injections per week with 99.99% uptime. The Java backend became immune to vendor API instabilities, significantly reducing integration downtime and maintenance overhead.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -341,11 +411,11 @@
                             under enterprise constraints.
                         </p>
                         <ul class="timeline-achievements">
-                            <li>Architected Chromeleon & Empower integrations with defensive patterns</li>
-                            <li>Designed immutable schemas for 1000+ Excel sheet ingestion</li>
-                            <li>Handled large payloads, file-system workflows, and audit trails</li>
-                            <li>Debugged and resolved production issues spanning OS, application, and database layers</li>
-                            <li>Improved system stability and reduced integration failures through backward-compatible schema migrations</li>
+                            <li>Architected and optimized event-driven ingestion pipelines interfacing with Chromeleon SDK and Empower Toolkit APIs under strict 21 CFR Part 11 compliance.</li>
+                            <li>Architected a resilient, schema-agnostic abstraction layer to unify integration between Chromeleon, Empower CDS, and core business systems.</li>
+                            <li>Engineered an immutable, versioned database schema to seamlessly support 1000+ evolving Excel templates without data loss or service disruption.</li>
+                            <li>Led the debugging of critical production bottlenecks, resolving complex thread-locking and TCP socket encoding issues across the OS and application layer.</li>
+                            <li>Eliminated integration downtime by implementing defensive file-system workflows with robust error-recovery and state-machine tracking.</li>
                         </ul>
                     </div>
                 </div>
@@ -362,11 +432,11 @@
                             Designed vendor-agnostic architectures and compliance-ready data models.
                         </p>
                         <ul class="timeline-achievements">
-                            <li>Weighing Balance & pH Meter hardware integrations</li>
-                            <li>Vendor-agnostic CDS architecture (Chromeleon + Empower)</li>
-                            <li>Compliance-ready data modeling & audit enforcement</li>
-                            <li>Defensive integrations with rollback safety</li>
-                            <li>Production-grade reliability under enterprise constraints</li>
+                            <li>Developed reliable, near-real-time socket integrations for weighing balances and pH meters, ensuring 100% data capture accuracy over volatile network conditions.</li>
+                            <li>Designed a vendor-agnostic CDS integration architecture, significantly reducing the coupling between enterprise systems and proprietary hardware APIs.</li>
+                            <li>Enforced rigorous compliance standards by modeling comprehensive audit trails and preserving raw byte-streams alongside processed instrument telemetry.</li>
+                            <li>Implemented defensive boundary patterns with automatic rollback capabilities, preventing corrupted payloads from polluting core databases.</li>
+                            <li>Mentored teams on production-grade reliability practices, specializing in Java memory management, transaction scopes, and connection pooling.</li>
                         </ul>
                     </div>
                 </div>
