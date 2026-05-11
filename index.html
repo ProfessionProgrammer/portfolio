@@ -3,47 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krushna Kale | Backend Engineer</title>
+    <title>Krushna Kale | Senior Backend Engineer</title>
     <meta name="description" content="Portfolio of Krushna Kale, Backend Engineer specializing in system integration, Java, Spring Boot, and Data Pipelines.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-terminal logo-icon"></i> Krushna Kale
+                <i class="fas fa-layer-group logo-icon"></i> Krushna Kale
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Work</a></li>
+                <li><a href="#skills" class="nav-link">Expertise</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero">
+    <header id="home" class="hero section-fade">
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Krushna Kale</h1>
-                <h2 class="hero-role">Backend Engineer <span class="divider">|</span> System Integrator</h2>
+                <h2 class="hero-role">Senior Backend Engineer <span class="divider">/</span> System Integrator</h2>
                 <p class="hero-tagline">
-                    I enjoy solving problems that sit in the uncomfortable middle — where hardware, legacy software, and modern cloud services collide. That's where good engineering actually matters.
+                    I build resilient systems where failure is not an option. Specializing in bridging legacy hardware, proprietary software, and modern cloud architectures in highly regulated environments.
                 </p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
-                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+                    <a href="#projects" class="btn btn-primary">View Case Studies</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="profile-container">
                     <img src="assets/images/profile.png" alt="Krushna Kale" class="profile-image">
-                    <div class="profile-badge"><i class="fas fa-check-circle"></i> Senior Engineer</div>
+                    <div class="profile-badge">
+                        <i class="fas fa-shield-check text-accent"></i> 6+ Yrs Experience
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,58 +58,61 @@
 
     <!-- About Section -->
     <section id="about" class="section bg-light">
-        <div class="container">
+        <div class="container section-fade">
             <div class="section-header">
-                <h2 class="section-title">What I Do Best</h2>
-                <p class="section-subtitle">Building resilient systems where failure is not an option.</p>
+                <span class="section-eyebrow">About Me</span>
+                <h2 class="section-title">Engineering at the Edge</h2>
+                <p class="section-subtitle">Solving problems that sit in the uncomfortable middle.</p>
             </div>
             
+            <div class="about-intro">
+                <p>I’m a backend engineer who enjoys working where systems collide — the edge where hardware, legacy software, and modern cloud services need to cooperate without breaking. My work is deeply rooted in real-world system constraints — unstable APIs, hardware communication, and strict regulatory environments.</p>
+            </div>
+
             <div class="about-grid">
                 <div class="about-card">
                     <div class="icon-wrapper"><i class="fas fa-server"></i></div>
-                    <h3>Backend & System Design</h3>
-                    <p>Designing scalable microservices and event-driven systems. Building high-performance APIs with <strong>Spring Boot</strong> & <strong>NestJS</strong>, creating abstraction layers to isolate fragile external systems.</p>
+                    <h3>Backend Architecture</h3>
+                    <p>Designing scalable microservices and high-performance APIs with <strong>Spring Boot</strong>. I build abstraction layers that isolate fragile external systems from core business logic.</p>
                 </div>
                 <div class="about-card">
-                    <div class="icon-wrapper"><i class="fas fa-network-wired"></i></div>
+                    <div class="icon-wrapper"><i class="fas fa-project-diagram"></i></div>
                     <h3>Enterprise Integrations</h3>
-                    <p>Integrating complex platforms like <strong>Chromeleon & Empower</strong> using SDK bridging. Building decoupled pipelines via <strong>Kafka/RabbitMQ</strong> and handling legacy protocols natively.</p>
+                    <p>Connecting complex platforms using SDK bridging and decoupled pipelines via <strong>Kafka/RabbitMQ</strong>. Fluent in handling legacy TCP, RS232, and proprietary formats natively.</p>
                 </div>
                 <div class="about-card">
                     <div class="icon-wrapper"><i class="fas fa-database"></i></div>
-                    <h3>Data Engineering</h3>
-                    <p>Processing high-volume, unstructured data (Excel, CSV, XML) through metadata-driven ingestion systems. Ensuring absolute data integrity compliant with <strong>ALCOA+</strong> and <strong>21 CFR Part 11</strong>.</p>
-                </div>
-                <div class="about-card">
-                    <div class="icon-wrapper"><i class="fas fa-microchip"></i></div>
-                    <h3>Hardware & Real-Time</h3>
-                    <p>Developing socket-based listeners using <strong>Netty</strong> to capture and stream real-time instrument telemetry. Handling encoding anomalies, connection drops, and noisy data streams.</p>
+                    <h3>Data Integrity</h3>
+                    <p>Processing high-volume data through metadata-driven ingestion systems. Ensuring absolute data accuracy compliant with <strong>ALCOA+</strong> and <strong>21 CFR Part 11</strong>.</p>
                 </div>
             </div>
 
-            <!-- Philosophy -->
-            <div class="philosophy-section">
-                <h3><i class="fas fa-lightbulb"></i> Engineering Philosophy</h3>
-                <div class="philosophy-grid">
+            <!-- Philosophy Strip -->
+            <div class="philosophy-strip">
+                <div class="philosophy-header">
+                    <h3>Engineering Philosophy</h3>
+                </div>
+                <div class="philosophy-items">
                     <div class="phil-item">
-                        <i class="fas fa-shield-alt text-primary"></i>
-                        <h4>Build for Failure</h4>
-                        <span>Systems will break — design so they recover automatically.</span>
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Build for Failure</h4>
+                            <p>Systems will break. Design them to recover automatically.</p>
+                        </div>
                     </div>
                     <div class="phil-item">
-                        <i class="fas fa-lock text-primary"></i>
-                        <h4>Protect the Core</h4>
-                        <span>Use retries, queues, and circuit breakers at boundaries.</span>
+                        <i class="fas fa-lock"></i>
+                        <div>
+                            <h4>Protect the Core</h4>
+                            <p>Use retries, queues, and circuit breakers at boundaries.</p>
+                        </div>
                     </div>
                     <div class="phil-item">
-                        <i class="fas fa-save text-primary"></i>
-                        <h4>Data is Sacred</h4>
-                        <span>Prefer immutability, audit trails, and versioning.</span>
-                    </div>
-                    <div class="phil-item">
-                        <i class="fas fa-stream text-primary"></i>
-                        <h4>Stream, Don't Load</h4>
-                        <span>Optimize memory by processing data in flow.</span>
+                        <i class="fas fa-stream"></i>
+                        <div>
+                            <h4>Stream, Don't Load</h4>
+                            <p>Optimize memory by processing massive payloads in flow.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,124 +121,134 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <div class="container">
+        <div class="container section-fade">
             <div class="section-header">
-                <h2 class="section-title">Real-World Engineering</h2>
-                <p class="section-subtitle">Systems built under strict enterprise constraints.</p>
+                <span class="section-eyebrow">Selected Work</span>
+                <h2 class="section-title">Case Studies</h2>
+                <p class="section-subtitle">Real-world systems built under strict enterprise constraints.</p>
             </div>
 
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-flask project-icon"></i>
-                        <h3>Enterprise CDS Integration Platform</h3>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-flask project-icon"></i>
+                            <h3>Resilient CDS Integration</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">.NET SDK</span>
+                        </div>
+                        
+                        <div class="project-story">
+                            <div class="story-block">
+                                <h4>The Problem</h4>
+                                <p>Querying Thermo Chromeleon & Waters Empower via monolithic Java backends caused thread starvation and legacy COM bridge crashes.</p>
+                            </div>
+                            <div class="story-block">
+                                <h4>The Solution</h4>
+                                <p>Architected an event-driven pipeline utilizing .NET microservices to safely query vendor SDKs, translating data to a canonical schema, and publishing to Kafka.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="project-desc">An event-driven integration system to sync analytical data from Thermo Chromeleon and Waters Empower systems without crashing legacy APIs.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">.NET SDK</span>
-                        <span class="tag">Kafka</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <ul class="project-bullets">
-                        <li>Built .NET microservices to safely interact with proprietary SDKs.</li>
-                        <li>Transformed vendor-specific data into a standardized canonical model.</li>
-                        <li>Implemented async processing using message brokers to avoid bottlenecks.</li>
-                    </ul>
                     <div class="project-impact">
-                        <strong>Impact:</strong> Achieved 99.99% uptime and scaled to handle 10,000+ injections/week reliably by removing direct JNI/COM integrations.
+                        <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
+                        <p>Decoupled the backend from API instabilities, achieving <strong>99.99% uptime</strong> for <strong>10,000+ injections/week</strong> while maintaining 21 CFR Part 11 compliance.</p>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-file-excel project-icon"></i>
-                        <h3>Dynamic Excel Data Ingestion Engine</h3>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-file-excel project-icon"></i>
+                            <h3>Dynamic Data Ingestion Engine</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Apache POI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Design Patterns</span>
+                        </div>
+                        
+                        <div class="project-story">
+                            <div class="story-block">
+                                <h4>The Problem</h4>
+                                <p>Ingesting unstructured scientific data from over 1,000 distinct, dynamically evolving, macro-heavy Excel templates.</p>
+                            </div>
+                            <div class="story-block">
+                                <h4>The Solution</h4>
+                                <p>Built a metadata-driven ingestion framework using Apache POI, decoupling parsing logic via strategy patterns to map hierarchical spreadsheets to relational schemas.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="project-desc">A metadata-driven ingestion framework (ARD System) capable of processing unstructured scientific data from over 1,000 distinct, macro-heavy Excel templates.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">Apache POI</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <ul class="project-bullets">
-                        <li>Separated parsing logic using strategy design patterns.</li>
-                        <li>Supported database schema evolution without backend code changes.</li>
-                        <li>Mapped hierarchical spreadsheet structures to relational schemas.</li>
-                    </ul>
                     <div class="project-impact">
-                        <strong>Impact:</strong> Eliminated manual data entry bottlenecks and enabled scientific teams to modify templates freely.
+                        <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
+                        <p>Enabled scientific teams to <strong>evolve templates without backend code deployments</strong>, entirely eliminating manual data entry bottlenecks.</p>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-satellite-dish project-icon"></i>
-                        <h3>Real-Time Instrument Data Capture</h3>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-satellite-dish project-icon"></i>
+                            <h3>Hardware Telemetry Capture</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tag">Netty</span>
+                            <span class="tag">TCP/IP</span>
+                            <span class="tag">WebSockets</span>
+                            <span class="tag">RS232</span>
+                        </div>
+                        
+                        <div class="project-story">
+                            <div class="story-block">
+                                <h4>The Problem</h4>
+                                <p>Capturing continuous measurements from legacy hardware over volatile TCP/RS232 connections, dealing with encoding anomalies and connection drops.</p>
+                            </div>
+                            <div class="story-block">
+                                <h4>The Solution</h4>
+                                <p>Engineered a Netty-based socket listener in Spring Boot to buffer and frame telemetry continuously, using WebSockets for real-time UI streaming.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="project-desc">A robust hardware telemetry capture system for legacy lab instruments (weighing balances, pH meters) over volatile connections.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Netty</span>
-                        <span class="tag">TCP/IP</span>
-                        <span class="tag">RS232</span>
-                        <span class="tag">WebSockets</span>
-                    </div>
-                    <ul class="project-bullets">
-                        <li>Developed Netty socket-based listeners for continuous data streams.</li>
-                        <li>Handled encoding anomalies and automatic connection recovery.</li>
-                        <li>Built real-time UI streaming using WebSockets.</li>
-                    </ul>
                     <div class="project-impact">
-                        <strong>Impact:</strong> Achieved 100% accurate data capture while preserving raw and processed byte-streams for compliance.
+                        <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
+                        <p>Achieved <strong>100% data capture accuracy</strong> and preserved raw byte-streams to satisfy strict ALCOA+ pharmaceutical data integrity principles.</p>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
                 <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-folder-tree project-icon"></i>
-                        <h3>Distributed File Processing Orchestrator</h3>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-folder-tree project-icon"></i>
+                            <h3>Distributed File Orchestrator</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tag">Java NIO.2</span>
+                            <span class="tag">Quartz Scheduler</span>
+                            <span class="tag">Spring Boot</span>
+                        </div>
+                        
+                        <div class="project-story">
+                            <div class="story-block">
+                                <h4>The Problem</h4>
+                                <p>Legacy lab equipment lacking APIs outputted proprietary formats to shared network drives, leading to severe race conditions and partial file reads.</p>
+                            </div>
+                            <div class="story-block">
+                                <h4>The Solution</h4>
+                                <p>Built a distributed file polling orchestrator utilizing explicit file-lock detection and a strict state-machine pattern for file lifecycle tracking.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="project-desc">A highly concurrent file polling orchestrator designed to integrate legacy equipment that only outputs to shared SMB/CIFS network drives.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Java NIO.2</span>
-                        <span class="tag">Quartz Scheduler</span>
-                        <span class="tag">Spring Boot</span>
-                    </div>
-                    <ul class="project-bullets">
-                        <li>Designed a state-machine based file lifecycle system.</li>
-                        <li>Implemented explicit file-lock detection to prevent partial reads.</li>
-                        <li>Enabled exactly-once processing with exponential backoff retries.</li>
-                    </ul>
                     <div class="project-impact">
-                        <strong>Impact:</strong> Completely eliminated race conditions and file corruption in shared network drives, ensuring reliable ingestion.
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card full-width">
-                    <div class="project-header">
-                        <i class="fas fa-globe project-icon"></i>
-                        <h3>Full-Stack API Platform (Ongoing)</h3>
-                    </div>
-                    <p class="project-desc">A modern full-stack platform acting as a product-oriented portfolio and sandbox environment.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Angular</span>
-                        <span class="tag">NestJS</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <ul class="project-bullets">
-                        <li>Backend powered by NestJS with clean, scalable REST API design.</li>
-                        <li>Frontend built in Angular focusing on responsive, modular UI components.</li>
-                    </ul>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Strengthening full-stack product capabilities and modern cloud-ready architecture patterns.
+                        <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
+                        <p>Ensured exactly-once processing and idempotent behavior, <strong>completely eliminating file corruption</strong> across shared network environments.</p>
                     </div>
                 </div>
             </div>
@@ -237,51 +257,55 @@
 
     <!-- Skills Section -->
     <section id="skills" class="section bg-light">
-        <div class="container">
+        <div class="container section-fade">
             <div class="section-header">
-                <h2 class="section-title">Tech Stack Snapshot</h2>
-                <p class="section-subtitle">The tools I use to build robust backends.</p>
+                <span class="section-eyebrow">Expertise</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">The tools I use to architect robust solutions.</p>
             </div>
 
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3 class="category-title"><i class="fas fa-code"></i> Languages</h3>
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend & Architecture</h3>
+                    </div>
                     <div class="badges">
                         <span class="badge badge-primary">Java</span>
-                        <span class="badge badge-primary">TypeScript</span>
-                        <span class="badge badge-primary">JavaScript</span>
+                        <span class="badge badge-primary">Spring Boot</span>
+                        <span class="badge badge-primary">Netty</span>
+                        <span class="badge badge-primary">NestJS</span>
+                        <span class="badge badge-outline">Microservices</span>
+                        <span class="badge badge-outline">Event-Driven Design</span>
+                        <span class="badge badge-outline">REST APIs</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title"><i class="fas fa-server"></i> Backend Frameworks</h3>
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data & Infrastructure</h3>
+                    </div>
                     <div class="badges">
-                        <span class="badge badge-secondary">Spring Boot</span>
-                        <span class="badge badge-secondary">NestJS</span>
-                        <span class="badge badge-secondary">Netty</span>
-                        <span class="badge badge-secondary">Spring Data JPA</span>
-                        <span class="badge badge-secondary">Spring Security</span>
+                        <span class="badge badge-secondary">PostgreSQL</span>
+                        <span class="badge badge-secondary">Oracle</span>
+                        <span class="badge badge-secondary">Kafka</span>
+                        <span class="badge badge-secondary">RabbitMQ</span>
+                        <span class="badge badge-outline">Schema Evolution</span>
+                        <span class="badge badge-outline">Apache POI</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
-                    <div class="badges">
-                        <span class="badge badge-accent">PostgreSQL</span>
-                        <span class="badge badge-accent">Oracle</span>
-                        <span class="badge badge-accent">SQL Server</span>
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages & Frontend</h3>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title"><i class="fas fa-cubes"></i> Architecture & Tools</h3>
                     <div class="badges">
-                        <span class="badge badge-dark">Microservices</span>
-                        <span class="badge badge-dark">Event-Driven Design</span>
-                        <span class="badge badge-dark">Kafka</span>
-                        <span class="badge badge-dark">RabbitMQ</span>
-                        <span class="badge badge-dark">Apache POI</span>
-                        <span class="badge badge-dark">Quartz Scheduler</span>
+                        <span class="badge badge-accent">TypeScript</span>
+                        <span class="badge badge-accent">JavaScript</span>
+                        <span class="badge badge-accent">Angular</span>
+                        <span class="badge badge-outline">HTML5/CSS3</span>
                     </div>
                 </div>
             </div>
@@ -290,12 +314,13 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="container">
+        <div class="container section-fade">
             <div class="contact-card">
                 <div class="contact-content">
-                    <h2 class="section-title" style="text-align: left;">Let's Connect</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
-                        I'm actively expanding into product-based companies and looking for complex backend/platform engineering roles.
+                    <span class="section-eyebrow">Get In Touch</span>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 0.5rem;">Let's Connect</h2>
+                    <p class="contact-desc">
+                        I'm actively expanding into product-based companies and looking for complex backend/platform engineering roles. If you have an intricate system design challenge, I'd love to talk.
                     </p>
                     
                     <div class="contact-links">
@@ -325,13 +350,16 @@
                 <div class="contact-form-container">
                     <form class="contact-form">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="How can we work together?" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
@@ -343,16 +371,20 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
-            <p>&copy; 2026 Krushna Kale. Engineered with focus.</p>
+            <div class="footer-brand">
+                <i class="fas fa-layer-group"></i> Krushna Kale
+            </div>
+            <p class="footer-copyright">&copy; 2026. Engineered with focus and precision.</p>
             <div class="socials">
-                <a href="https://www.linkedin.com/in/krushna-k-57b591106/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krushna-k-57b591106/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
 
+    <!-- App Scripts -->
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -360,6 +392,65 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Scroll Progress Bar
+        const scrollBar = document.getElementById('scroll-bar');
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            scrollBar.style.width = scrolled + "%";
+        });
+
+        // Navbar Active State Update on Scroll
+        const sections = document.querySelectorAll('section, header');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Navbar drop shadow on scroll
+            const navbar = document.getElementById('navbar');
+            if(window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for Fade-In Animations
+        const fadeElements = document.querySelectorAll('.section-fade');
+        const fadeOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const fadeOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, fadeOptions);
+
+        fadeElements.forEach(element => {
+            fadeOnScroll.observe(element);
         });
     </script>
 </body>
