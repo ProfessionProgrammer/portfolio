@@ -3,441 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krushna Pundlik Kale | Senior Backend Engineer</title>
+    <title>Krushna Kale | Backend Engineer</title>
+    <meta name="description" content="Portfolio of Krushna Kale, Backend Engineer specializing in system integration, Java, Spring Boot, and Data Pipelines.">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Blueprint Background -->
-    <div class="blueprint-bg">
-        <div class="grid-pattern"></div>
-        <div class="gradient-overlay"></div>
-    </div>
-
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-icon">◆</span> Krushna Pundlik Kale
+                <i class="fas fa-terminal logo-icon"></i> Krushna Kale
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#systems" class="nav-link">Systems</a></li>
-                <li><a href="#case-study" class="nav-link">Case Study</a></li>
-                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
+    <header id="home" class="hero">
+        <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Senior Backend Engineer</h1>
-                <p class="hero-subtitle">Spring Boot | Enterprise Integrations | Data Pipelines</p>
-                <p class="hero-description">
-                    6+ years building robust Java & Spring Boot backend systems. 
-                    I specialize in complex, integration-heavy enterprise environments, real-time data pipelines, and distributed architectures where data integrity and system reliability are non-negotiable.
+                <h1 class="hero-title">Krushna Kale</h1>
+                <h2 class="hero-role">Backend Engineer <span class="divider">|</span> System Integrator</h2>
+                <p class="hero-tagline">
+                    I enjoy solving problems that sit in the uncomfortable middle — where hardware, legacy software, and modern cloud services collide. That's where good engineering actually matters.
                 </p>
                 <div class="hero-cta">
-                    <a href="#systems" class="btn btn-primary">View Systems</a>
-                    <a href="#case-study" class="btn btn-secondary">View Case Study</a>
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="profile-container">
-                    <img src="assets/images/profile.png" alt="Krushna Pundlik Kale" class="profile-image">
-                    <div class="profile-badge">Senior Engineer</div>
+                    <img src="assets/images/profile.png" alt="Krushna Kale" class="profile-image">
+                    <div class="profile-badge"><i class="fas fa-check-circle"></i> Senior Engineer</div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Engineering Philosophy</h2>
-            <p class="section-subtitle" style="margin-bottom: 2rem;">"I design systems where data cannot fail, and work on integration boundaries where most systems break."</p>
+            <div class="section-header">
+                <h2 class="section-title">What I Do Best</h2>
+                <p class="section-subtitle">Building resilient systems where failure is not an option.</p>
+            </div>
+            
             <div class="about-grid">
                 <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <h3>Backend Architecture</h3>
-                    <p>Building high-performance APIs and microservices in Spring Boot. I focus on clean domain models, dependency injection, and scalable enterprise patterns.</p>
+                    <div class="icon-wrapper"><i class="fas fa-server"></i></div>
+                    <h3>Backend & System Design</h3>
+                    <p>Designing scalable microservices and event-driven systems. Building high-performance APIs with <strong>Spring Boot</strong> & <strong>NestJS</strong>, creating abstraction layers to isolate fragile external systems.</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Integration Boundaries</h3>
-                    <p>Connecting disparate hardware and software systems. Extensive experience with device communication, file workflows, and robust error recovery.</p>
+                    <div class="icon-wrapper"><i class="fas fa-network-wired"></i></div>
+                    <h3>Enterprise Integrations</h3>
+                    <p>Integrating complex platforms like <strong>Chromeleon & Empower</strong> using SDK bridging. Building decoupled pipelines via <strong>Kafka/RabbitMQ</strong> and handling legacy protocols natively.</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Data Integrity & Schemas</h3>
-                    <p>Designing immutable schemas and audit trails in PostgreSQL. I build resilient pipelines capable of safe schema evolution and backward-compatible migrations.</p>
+                    <div class="icon-wrapper"><i class="fas fa-database"></i></div>
+                    <h3>Data Engineering</h3>
+                    <p>Processing high-volume, unstructured data (Excel, CSV, XML) through metadata-driven ingestion systems. Ensuring absolute data integrity compliant with <strong>ALCOA+</strong> and <strong>21 CFR Part 11</strong>.</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-bug"></i>
-                    </div>
-                    <h3>Production Debugging</h3>
-                    <p>Deep-diving into complex production issues. From character encoding mismatches in streams to OS-level file locking and connection pooling bottlenecks.</p>
+                    <div class="icon-wrapper"><i class="fas fa-microchip"></i></div>
+                    <h3>Hardware & Real-Time</h3>
+                    <p>Developing socket-based listeners using <strong>Netty</strong> to capture and stream real-time instrument telemetry. Handling encoding anomalies, connection drops, and noisy data streams.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Systems Section -->
-    <section id="systems" class="systems">
-        <div class="container">
-            <h2 class="section-title">Integrated Systems</h2>
-            <p class="section-subtitle">Real-world enterprise platforms I've architected integrations for</p>
-            
-            <div class="systems-grid">
-                <!-- Chromeleon -->
-                <div class="system-card">
-                    <div class="system-header">
-                        <div class="system-icon">
-                            <i class="fas fa-flask-vial"></i>
-                        </div>
-                        <h3>Chromeleon CDS</h3>
+            <!-- Philosophy -->
+            <div class="philosophy-section">
+                <h3><i class="fas fa-lightbulb"></i> Engineering Philosophy</h3>
+                <div class="philosophy-grid">
+                    <div class="phil-item">
+                        <i class="fas fa-shield-alt text-primary"></i>
+                        <h4>Build for Failure</h4>
+                        <span>Systems will break — design so they recover automatically.</span>
                     </div>
-                    <div class="system-body">
-                        <p class="system-type">Chromatography Data System</p>
-                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Bridging a Java enterprise backend with Chromeleon's native .NET SDK to extract complex injection data in real-time.</p>
-                            
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Architected a resilient microservice bridge that consumes the .NET SDK and streams results via a message broker.</p>
-
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Ensured 21 CFR Part 11 compliance by mapping native audit trails directly into the enterprise database.</p>
-                        </div>
-                        <div class="system-stats">
-                            <span class="stat">.NET SDK Bridge</span>
-                            <span class="stat">Part 11 Compliant</span>
-                        </div>
+                    <div class="phil-item">
+                        <i class="fas fa-lock text-primary"></i>
+                        <h4>Protect the Core</h4>
+                        <span>Use retries, queues, and circuit breakers at boundaries.</span>
                     </div>
-                </div>
-
-                <!-- Empower -->
-                <div class="system-card">
-                    <div class="system-header">
-                        <div class="system-icon">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <h3>Empower CDS</h3>
+                    <div class="phil-item">
+                        <i class="fas fa-save text-primary"></i>
+                        <h4>Data is Sacred</h4>
+                        <span>Prefer immutability, audit trails, and versioning.</span>
                     </div>
-                    <div class="system-body">
-                        <p class="system-type">Analytical Lab System</p>
-                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Consuming hierarchical analytical data (Projects, Sample Sets, Channels) from Waters Empower's legacy COM-based Toolkit API.</p>
-                            
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Developed an asynchronous integration layer to safely query the Empower Toolkit without blocking core Java threads.</p>
-
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Implemented token-bucket rate limiting to prevent overloading the Empower database during large, historical data pulls.</p>
-                        </div>
-                        <div class="system-stats">
-                            <span class="stat">Empower Toolkit API</span>
-                            <span class="stat">Async Polling</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Weighing Balance -->
-                <div class="system-card">
-                    <div class="system-header">
-                        <div class="system-icon">
-                            <i class="fas fa-scale-balanced"></i>
-                        </div>
-                        <h3>Weighing Balance</h3>
-                    </div>
-                    <div class="system-body">
-                        <p class="system-type">Hardware Instrument Integration</p>
-                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Capturing precise measurements over TCP/IP using protocols like MT-SICS, dealing with unstable connections and continuous data streams.</p>
-                            
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Engineered a Netty-based socket listener in Spring Boot to buffer, frame, and parse proprietary instrument telemetry continuously.</p>
-
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Preserved raw byte-streams alongside parsed values to satisfy ALCOA+ data integrity principles in regulated labs.</p>
-                        </div>
-                        <div class="system-stats">
-                            <span class="stat">Netty TCP/IP</span>
-                            <span class="stat">ALCOA+ Integrity</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- pH Meter -->
-                <div class="system-card">
-                    <div class="system-header">
-                        <div class="system-icon">
-                            <i class="fas fa-droplet"></i>
-                        </div>
-                        <h3>pH Meter Integration</h3>
-                    </div>
-                    <div class="system-body">
-                        <p class="system-type">Analytical Instrument Data</p>
-                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Parsing heterogeneous serial (RS232/USB) and TCP outputs from various pH meter models, handling encoding anomalies.</p>
-                            
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Implemented a fault-tolerant communication module that normalizes different vendor formats into a unified JSON event stream.</p>
-
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Designed a WebSocket bridge to push live pH readings and calibration statuses directly to the scientist's browser session.</p>
-                        </div>
-                        <div class="system-stats">
-                            <span class="stat">RS232 / TCP</span>
-                            <span class="stat">WebSocket Push</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ARD Platform -->
-                <div class="system-card">
-                    <div class="system-header">
-                        <div class="system-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>ARD Enterprise</h3>
-                    </div>
-                    <div class="system-body">
-                        <p class="system-type">Analytical Research Data System</p>
-                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Ingesting unstructured scientific experimental data from scientists using hundreds of distinct, macro-heavy Excel templates.</p>
-                            
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Architected a metadata-driven ingestion engine utilizing Apache POI to map spreadsheet structures to a normalized relational schema.</p>
-
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Decoupled parsing logic from core rules via strategy patterns, allowing templates to evolve without backend code deployments.</p>
-                        </div>
-                        <div class="system-stats">
-                            <span class="stat">Apache POI</span>
-                            <span class="stat">Metadata-Driven</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- File Systems -->
-                <div class="system-card">
-                    <div class="system-header">
-                        <div class="system-icon">
-                            <i class="fas fa-folder-open"></i>
-                        </div>
-                        <h3>File-System Workflows</h3>
-                    </div>
-                    <div class="system-body">
-                        <p class="system-type">Legacy Instrument Integration</p>
-                        <div class="engineering-details" style="text-align: left; margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 5px;"></i> Challenge</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Integrating legacy lab equipment that lack APIs, outputting proprietary formats (CSV/XML/PDF) to SMB/CIFS network drives.</p>
-                            
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-lightbulb" style="color: var(--secondary); margin-right: 5px;"></i> Approach</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.4;">Built a distributed file polling orchestrator using Java NIO.2 and Quartz Scheduler, equipped with advanced file-lock detection.</p>
-
-                            <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem;"><i class="fas fa-code-branch" style="color: var(--primary); margin-right: 5px;"></i> Key Decisions</h4>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Implemented a state-machine pattern for file lifecycle tracking, ensuring exactly-once processing and secure chain of custody.</p>
-                        </div>
-                        <div class="system-stats">
-                            <span class="stat">Java NIO.2</span>
-                            <span class="stat">State Machine</span>
-                        </div>
+                    <div class="phil-item">
+                        <i class="fas fa-stream text-primary"></i>
+                        <h4>Stream, Don't Load</h4>
+                        <span>Optimize memory by processing data in flow.</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            
-            <div class="expertise-grid">
-                <div class="expertise-column" style="border-top: 4px solid var(--primary); transform: scale(1.02); box-shadow: 0 10px 30px rgba(0, 102, 204, 0.1);">
-                    <h3 class="expertise-category"><i class="fas fa-server"></i> Backend Engineering</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Java & Spring Boot</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 98%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">REST APIs & Microservices</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">System Integration (Hardware/Software)</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 96%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Real-time Data Processing</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="expertise-column">
-                    <h3 class="expertise-category"><i class="fas fa-database"></i> Database & Architecture</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">PostgreSQL</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 94%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Schema Evolution & Migrations</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Entity Modeling & Optimization</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Audit Trails & Immutability</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="expertise-column">
-                    <h3 class="expertise-category"><i class="fas fa-network-wired"></i> Workflows & Frontend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">File-System Workflows (ZIP, Network)</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Device Communication (TCP/RS232)</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Production Debugging</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
-                        </div>
-                        <div class="skill-item" style="opacity: 0.8;">
-                            <span class="skill-name">Angular & Web UI</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 75%; background: var(--border);"></div></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Real-World Engineering</h2>
+                <p class="section-subtitle">Systems built under strict enterprise constraints.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Engineering Case Study Section -->
-    <section id="case-study" class="case-study" style="padding: 100px 0; background: white;">
-        <div class="container">
-            <h2 class="section-title">Engineering Case Study</h2>
-            <p class="section-subtitle">Deep Dive: Resilient Enterprise CDS Integration (Chromeleon & Empower)</p>
-            
-            <div class="case-study-content" style="max-width: 900px; margin: 0 auto; background: var(--card-bg); padding: 3rem; border-radius: 12px; border: 1px solid var(--border); border-left: 5px solid var(--primary);">
-                
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-fire" style="margin-right: 8px;"></i> The Problem & Context</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.7;">
-                        The enterprise LIMS/ELN needed to synchronize tens of thousands of Sample Sets and analytical Injections from both Thermo Chromeleon and Waters Empower systems. Directly querying these proprietary ecosystems from a monolithic Java backend led to thread starvation, COM bridge crashes, and severe database connection bottlenecks.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-anchor" style="margin-right: 8px;"></i> Constraints</h3>
-                    <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.5rem;">
-                        <li><strong>Proprietary APIs:</strong> Limited to the native .NET Chromeleon SDK and the legacy COM-based Empower Toolkit.</li>
-                        <li><strong>Compliance:</strong> Zero data loss and strict 21 CFR Part 11 compliance (audit trails, signatures) were legally mandatory.</li>
-                        <li><strong>Performance:</strong> Data extraction could not impact the performance of active laboratory instruments communicating with the CDS servers.</li>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-flask project-icon"></i>
+                        <h3>Enterprise CDS Integration Platform</h3>
+                    </div>
+                    <p class="project-desc">An event-driven integration system to sync analytical data from Thermo Chromeleon and Waters Empower systems without crashing legacy APIs.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">.NET SDK</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Built .NET microservices to safely interact with proprietary SDKs.</li>
+                        <li>Transformed vendor-specific data into a standardized canonical model.</li>
+                        <li>Implemented async processing using message brokers to avoid bottlenecks.</li>
                     </ul>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Achieved 99.99% uptime and scaled to handle 10,000+ injections/week reliably by removing direct JNI/COM integrations.
+                    </div>
                 </div>
 
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i> Architecture & Approach</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.7;">
-                        I architected an <strong>event-driven integration pipeline</strong>. We deployed lightweight, native bridging microservices (C#/.NET) that securely authenticated and queried the vendor SDKs. These services translated proprietary data models into an agnostic canonical schema, publishing JSON events to an enterprise message broker (RabbitMQ/Kafka) consumed asynchronously by our Spring Boot backend.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-bolt" style="margin-right: 8px;"></i> Key Engineering Challenges Resolved</h3>
-                    <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.5rem;">
-                        <li><strong>Rate Limiting & Backpressure:</strong> Implemented token-bucket rate limiting on the bridge services to ensure legacy CDS databases were never overwhelmed during bulk historical data extractions.</li>
-                        <li><strong>Fault Isolation:</strong> Eliminated JVM crashes caused by native JNI/COM failures by offloading SDK communication to isolated microservices.</li>
-                        <li><strong>Atomicity:</strong> Configured transactional messaging; if an injection payload failed validation in Spring Boot, the event was routed to a Dead Letter Queue (DLQ) for manual triage without halting the pipeline.</li>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-file-excel project-icon"></i>
+                        <h3>Dynamic Excel Data Ingestion Engine</h3>
+                    </div>
+                    <p class="project-desc">A metadata-driven ingestion framework (ARD System) capable of processing unstructured scientific data from over 1,000 distinct, macro-heavy Excel templates.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Apache POI</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Separated parsing logic using strategy design patterns.</li>
+                        <li>Supported database schema evolution without backend code changes.</li>
+                        <li>Mapped hierarchical spreadsheet structures to relational schemas.</li>
                     </ul>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Eliminated manual data entry bottlenecks and enabled scientific teams to modify templates freely.
+                    </div>
                 </div>
 
-                <div>
-                    <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem;"><i class="fas fa-chart-line" style="margin-right: 8px;"></i> Outcome</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.7; font-weight: 500;">
-                        The decoupled pipeline successfully processed over 10,000+ injections per week with 99.99% uptime. The Java backend became immune to vendor API instabilities, significantly reducing integration downtime and maintenance overhead.
-                    </p>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-satellite-dish project-icon"></i>
+                        <h3>Real-Time Instrument Data Capture</h3>
+                    </div>
+                    <p class="project-desc">A robust hardware telemetry capture system for legacy lab instruments (weighing balances, pH meters) over volatile connections.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Netty</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">RS232</span>
+                        <span class="tag">WebSockets</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Developed Netty socket-based listeners for continuous data streams.</li>
+                        <li>Handled encoding anomalies and automatic connection recovery.</li>
+                        <li>Built real-time UI streaming using WebSockets.</li>
+                    </ul>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Achieved 100% accurate data capture while preserving raw and processed byte-streams for compliance.
+                    </div>
                 </div>
 
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder-tree project-icon"></i>
+                        <h3>Distributed File Processing Orchestrator</h3>
+                    </div>
+                    <p class="project-desc">A highly concurrent file polling orchestrator designed to integrate legacy equipment that only outputs to shared SMB/CIFS network drives.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Java NIO.2</span>
+                        <span class="tag">Quartz Scheduler</span>
+                        <span class="tag">Spring Boot</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Designed a state-machine based file lifecycle system.</li>
+                        <li>Implemented explicit file-lock detection to prevent partial reads.</li>
+                        <li>Enabled exactly-once processing with exponential backoff retries.</li>
+                    </ul>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Completely eliminated race conditions and file corruption in shared network drives, ensuring reliable ingestion.
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card full-width">
+                    <div class="project-header">
+                        <i class="fas fa-globe project-icon"></i>
+                        <h3>Full-Stack API Platform (Ongoing)</h3>
+                    </div>
+                    <p class="project-desc">A modern full-stack platform acting as a product-oriented portfolio and sandbox environment.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag">NestJS</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Backend powered by NestJS with clean, scalable REST API design.</li>
+                        <li>Frontend built in Angular focusing on responsive, modular UI components.</li>
+                    </ul>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Strengthening full-stack product capabilities and modern cloud-ready architecture patterns.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="experience">
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Professional Journey</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Senior Software Engineer</h3>
-                        <p class="timeline-date">2019 - Present</p>
-                        <p class="timeline-description">
-                            Architected and implemented complex enterprise integration systems, specializing in Chromeleon and Empower CDS platforms. 
-                            Designed immutable schemas for 1000+ Excel sheet ingestion, handled large payloads, and ensured production-grade reliability 
-                            under enterprise constraints.
-                        </p>
-                        <ul class="timeline-achievements">
-                            <li>Architected and optimized event-driven ingestion pipelines interfacing with Chromeleon SDK and Empower Toolkit APIs under strict 21 CFR Part 11 compliance.</li>
-                            <li>Architected a resilient, schema-agnostic abstraction layer to unify integration between Chromeleon, Empower CDS, and core business systems.</li>
-                            <li>Engineered an immutable, versioned database schema to seamlessly support 1000+ evolving Excel templates without data loss or service disruption.</li>
-                            <li>Led the debugging of critical production bottlenecks, resolving complex thread-locking and TCP socket encoding issues across the OS and application layer.</li>
-                            <li>Eliminated integration downtime by implementing defensive file-system workflows with robust error-recovery and state-machine tracking.</li>
-                        </ul>
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack Snapshot</h2>
+                <p class="section-subtitle">The tools I use to build robust backends.</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-code"></i> Languages</h3>
+                    <div class="badges">
+                        <span class="badge badge-primary">Java</span>
+                        <span class="badge badge-primary">TypeScript</span>
+                        <span class="badge badge-primary">JavaScript</span>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-server"></i> Backend Frameworks</h3>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Spring Boot</span>
+                        <span class="badge badge-secondary">NestJS</span>
+                        <span class="badge badge-secondary">Netty</span>
+                        <span class="badge badge-secondary">Spring Data JPA</span>
+                        <span class="badge badge-secondary">Spring Security</span>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Multi-System Integration Expertise</h3>
-                        <p class="timeline-date">Core Competency</p>
-                        <p class="timeline-description">
-                            Integrated multiple laboratory and analytical systems including weighing balances and pH meters. 
-                            Designed vendor-agnostic architectures and compliance-ready data models.
-                        </p>
-                        <ul class="timeline-achievements">
-                            <li>Developed reliable, near-real-time socket integrations for weighing balances and pH meters, ensuring 100% data capture accuracy over volatile network conditions.</li>
-                            <li>Designed a vendor-agnostic CDS integration architecture, significantly reducing the coupling between enterprise systems and proprietary hardware APIs.</li>
-                            <li>Enforced rigorous compliance standards by modeling comprehensive audit trails and preserving raw byte-streams alongside processed instrument telemetry.</li>
-                            <li>Implemented defensive boundary patterns with automatic rollback capabilities, preventing corrupted payloads from polluting core databases.</li>
-                            <li>Mentored teams on production-grade reliability practices, specializing in Java memory management, transaction scopes, and connection pooling.</li>
-                        </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="badges">
+                        <span class="badge badge-accent">PostgreSQL</span>
+                        <span class="badge badge-accent">Oracle</span>
+                        <span class="badge badge-accent">SQL Server</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-cubes"></i> Architecture & Tools</h3>
+                    <div class="badges">
+                        <span class="badge badge-dark">Microservices</span>
+                        <span class="badge badge-dark">Event-Driven Design</span>
+                        <span class="badge badge-dark">Kafka</span>
+                        <span class="badge badge-dark">RabbitMQ</span>
+                        <span class="badge badge-dark">Apache POI</span>
+                        <span class="badge badge-dark">Quartz Scheduler</span>
                     </div>
                 </div>
             </div>
@@ -445,73 +289,78 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">Open to complex architectural challenges and product-based opportunities</p>
-            
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <p class="label">Email</p>
-                            <p class="value">krushnakale@zohomail.in</p>
+            <div class="contact-card">
+                <div class="contact-content">
+                    <h2 class="section-title" style="text-align: left;">Let's Connect</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+                        I'm actively expanding into product-based companies and looking for complex backend/platform engineering roles.
+                    </p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:krushnakale@zohomail.in" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <strong>krushnakale@zohomail.in</strong>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/krushna-k-57b591106/" target="_blank" class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <strong>krushna-k-57b591106</strong>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <strong>India / Remote</strong>
+                            </div>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <p class="label">Phone</p>
-                            <p class="value">+91 9096009168</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <p class="label">Location</p>
-                            <p class="value">India / Remote</p>
-                        </div>
-                    </div>
-                    <!--<div class="info-item">
-                        <i class="fas fa-briefcase"></i>
-                        <div>
-                            <p class="label">Seeking</p>
-                            <p class="value">Product-based companies (Tier 1/2)</p>
-                        </div>
-                    </div>-->
                 </div>
-
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Krushna Pundlik Kale | Enterprise Systems Architect</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/krushna-k-57b591106/" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
-                </div>
+        <div class="container footer-container">
+            <p>&copy; 2026 Krushna Kale. Engineered with focus.</p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/krushna-k-57b591106/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
