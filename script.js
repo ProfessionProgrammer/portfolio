@@ -11,8 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = themeToggleBtn.querySelector('i');
     
-    // Check local storage or system preference
-    const savedTheme = localStorage.getItem('theme');
+    // Check local storage or system preference safely
+    let savedTheme = null;
+    try {
+        savedTheme = localStorage.getItem('theme');
+    } catch (e) {
+        console.warn('localStorage is not accessible:', e);
+    }
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     // Set default theme to dark if nothing is stored
@@ -28,7 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         
         document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
+        
+        try {
+            localStorage.setItem('theme', newTheme);
+        } catch (e) {
+            console.warn('localStorage is not writable:', e);
+        }
+        
         updateThemeIcon(newTheme);
         
         // Show subtle status feedback toast
