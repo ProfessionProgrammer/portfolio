@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krushna Kale | Senior Backend Engineer</title>
-    <meta name="description" content="Portfolio of Krushna Kale, Backend Engineer specializing in system integration, Java, Spring Boot, and Data Pipelines.">
+    <title>Krushna Kale | Senior Backend Engineer & System Integrator</title>
+    <meta name="description" content="Portfolio of Krushna Kale, Senior Backend Engineer specializing in system integration, event-driven pipelines, Java, Spring Boot, and high-performance telemetry capture.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Scroll Progress -->
@@ -15,21 +14,46 @@
         <div class="scroll-progress-bar" id="scroll-bar"></div>
     </div>
 
-    <!-- Navbar -->
+    <!-- Sticky Navbar -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-layer-group logo-icon"></i> Krushna Kale
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo" id="nav-logo">
+                <i class="fas fa-network-wired logo-icon"></i> Krushna Kale
+            </a>
+            
+            <div class="nav-right-side">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Work</a></li>
+                    <li><a href="#skills" class="nav-link">Expertise</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Mobile Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Work</a></li>
-                <li><a href="#skills" class="nav-link">Expertise</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
         </div>
     </nav>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+        <button class="mobile-drawer-close" id="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Work</a></li>
+            <li><a href="#skills" class="nav-link">Expertise</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <header id="home" class="hero section-fade">
@@ -41,15 +65,18 @@
                     I build resilient systems where failure is not an option. Specializing in bridging legacy hardware, proprietary software, and modern cloud architectures in highly regulated environments.
                 </p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Case Studies</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-primary">View Case Studies <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch <i class="fas fa-envelope"></i></a>
                 </div>
             </div>
+            
             <div class="hero-visual">
-                <div class="profile-container">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-border"></div>
                     <img src="assets/images/profile.png" alt="Krushna Kale" class="profile-image">
                     <div class="profile-badge">
-                        <i class="fas fa-shield-check text-accent"></i> 6+ Yrs Experience
+                        <i class="fas fa-circle"></i> 6+ Yrs Experience
                     </div>
                 </div>
             </div>
@@ -70,17 +97,19 @@
             </div>
 
             <div class="about-grid">
-                <div class="about-card">
+                <div class="about-card glass-panel">
                     <div class="icon-wrapper"><i class="fas fa-server"></i></div>
                     <h3>Backend Architecture</h3>
                     <p>Designing scalable microservices and high-performance APIs with <strong>Spring Boot</strong>. I build abstraction layers that isolate fragile external systems from core business logic.</p>
                 </div>
-                <div class="about-card">
+                
+                <div class="about-card glass-panel">
                     <div class="icon-wrapper"><i class="fas fa-project-diagram"></i></div>
                     <h3>Enterprise Integrations</h3>
                     <p>Connecting complex platforms using SDK bridging and decoupled pipelines via <strong>Kafka/RabbitMQ</strong>. Fluent in handling legacy TCP, RS232, and proprietary formats natively.</p>
                 </div>
-                <div class="about-card">
+                
+                <div class="about-card glass-panel">
                     <div class="icon-wrapper"><i class="fas fa-database"></i></div>
                     <h3>Data Integrity</h3>
                     <p>Processing high-volume data through metadata-driven ingestion systems. Ensuring absolute data accuracy compliant with <strong>ALCOA+</strong> and <strong>21 CFR Part 11</strong>.</p>
@@ -88,7 +117,7 @@
             </div>
 
             <!-- Philosophy Strip -->
-            <div class="philosophy-strip">
+            <div class="philosophy-strip glass-panel">
                 <div class="philosophy-header">
                     <h3>Engineering Philosophy</h3>
                 </div>
@@ -116,6 +145,39 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Live Developer Terminal Simulator -->
+            <div class="terminal-section section-fade">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="t-btn t-btn-close"></span>
+                            <span class="t-btn t-btn-min"></span>
+                            <span class="t-btn t-btn-max"></span>
+                        </div>
+                        <div class="terminal-title">
+                            <i class="fas fa-terminal"></i> krushna@integration-srv:~
+                        </div>
+                        <div class="terminal-status-badge">
+                            LIVE PIPELINE ACTIVE
+                        </div>
+                    </div>
+                    <div class="terminal-tabs">
+                        <button class="terminal-tab-btn active" data-tab="netty">
+                            <i class="fas fa-network-wired"></i> netty-telemetry.log
+                        </button>
+                        <button class="terminal-tab-btn" data-tab="excel">
+                            <i class="fas fa-file-code"></i> excel-engine.log
+                        </button>
+                        <button class="terminal-tab-btn" data-tab="cds">
+                            <i class="fas fa-microchip"></i> cds-kafka-bridge.log
+                        </button>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <!-- Loaded dynamically by script.js -->
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -130,7 +192,7 @@
 
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card glass-panel">
                     <div class="project-content">
                         <div class="project-header">
                             <i class="fas fa-flask project-icon"></i>
@@ -154,14 +216,49 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Dynamic Architecture Flowchart 1 -->
+                    <div class="project-actions">
+                        <button class="btn-toggle-arch" data-project="1">
+                            <i class="fas fa-project-diagram"></i> Show Architecture Flow
+                        </button>
+                    </div>
+                    <div class="architecture-container" id="arch-p1">
+                        <div class="architecture-flowchart">
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="fas fa-flask"></i></div>
+                                <div class="node-label">Empower CDS</div>
+                                <div class="node-desc">Vendor System</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fab fa-windows"></i></div>
+                                <div class="node-label">.NET Microservice</div>
+                                <div class="node-desc">COM Bridge</div>
+                            </div>
+                            <div class="flowchart-line alt-flow"></div>
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="fas fa-server"></i></div>
+                                <div class="node-label">Kafka Broker</div>
+                                <div class="node-desc">Message Queue</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fas fa-database"></i></div>
+                                <div class="node-label">PostgreSQL</div>
+                                <div class="node-desc">Canonical DB</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-impact">
                         <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
-                        <p>Decoupled the backend from API instabilities, achieving <strong>99.99% uptime</strong> for <strong>10,000+ injections/week</strong> while maintaining 21 CFR Part 11 compliance.</p>
+                        <p>Decoupled backend from API instabilities, achieving <strong>99.99% uptime</strong> for <strong>10,000+ injections/week</strong> while maintaining 21 CFR Part 11 compliance.</p>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card glass-panel">
                     <div class="project-content">
                         <div class="project-header">
                             <i class="fas fa-file-excel project-icon"></i>
@@ -185,6 +282,41 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Dynamic Architecture Flowchart 2 -->
+                    <div class="project-actions">
+                        <button class="btn-toggle-arch" data-project="2">
+                            <i class="fas fa-project-diagram"></i> Show Architecture Flow
+                        </button>
+                    </div>
+                    <div class="architecture-container" id="arch-p2">
+                        <div class="architecture-flowchart">
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="far fa-file-excel"></i></div>
+                                <div class="node-label">1000+ Spreadsheets</div>
+                                <div class="node-desc">Dynamic Excel</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fas fa-gears"></i></div>
+                                <div class="node-label">Apache POI Parser</div>
+                                <div class="node-desc">Strategy Pattern</div>
+                            </div>
+                            <div class="flowchart-line alt-flow"></div>
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="fas fa-layer-group"></i></div>
+                                <div class="node-label">Metadata Decoupler</div>
+                                <div class="node-desc">Schema Mapper</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fas fa-database"></i></div>
+                                <div class="node-label">PostgreSQL</div>
+                                <div class="node-desc">Target Storage</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-impact">
                         <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
                         <p>Enabled scientific teams to <strong>evolve templates without backend code deployments</strong>, entirely eliminating manual data entry bottlenecks.</p>
@@ -192,7 +324,7 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card">
+                <div class="project-card glass-panel">
                     <div class="project-content">
                         <div class="project-header">
                             <i class="fas fa-satellite-dish project-icon"></i>
@@ -216,6 +348,41 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Dynamic Architecture Flowchart 3 -->
+                    <div class="project-actions">
+                        <button class="btn-toggle-arch" data-project="3">
+                            <i class="fas fa-project-diagram"></i> Show Architecture Flow
+                        </button>
+                    </div>
+                    <div class="architecture-container" id="arch-p3">
+                        <div class="architecture-flowchart">
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="fas fa-microchip"></i></div>
+                                <div class="node-label">Legacy Balance/pH</div>
+                                <div class="node-desc">TCP / RS232 Stream</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fas fa-network-wired"></i></div>
+                                <div class="node-label">Netty Listener</div>
+                                <div class="node-desc">Spring Buffer</div>
+                            </div>
+                            <div class="flowchart-line alt-flow"></div>
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="fas fa-wave-square"></i></div>
+                                <div class="node-label">WebSockets</div>
+                                <div class="node-desc">Real-Time Sync</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fas fa-desktop"></i></div>
+                                <div class="node-label">Live Monitor UI</div>
+                                <div class="node-desc">100% Accuracy</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-impact">
                         <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
                         <p>Achieved <strong>100% data capture accuracy</strong> and preserved raw byte-streams to satisfy strict ALCOA+ pharmaceutical data integrity principles.</p>
@@ -223,7 +390,7 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card">
+                <div class="project-card glass-panel">
                     <div class="project-content">
                         <div class="project-header">
                             <i class="fas fa-folder-tree project-icon"></i>
@@ -246,6 +413,41 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Dynamic Architecture Flowchart 4 -->
+                    <div class="project-actions">
+                        <button class="btn-toggle-arch" data-project="4">
+                            <i class="fas fa-project-diagram"></i> Show Architecture Flow
+                        </button>
+                    </div>
+                    <div class="architecture-container" id="arch-p4">
+                        <div class="architecture-flowchart">
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="far fa-folder-open"></i></div>
+                                <div class="node-label">Shared Net Drives</div>
+                                <div class="node-desc">CSV / XML Outputs</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fas fa-clock"></i></div>
+                                <div class="node-label">Quartz Scheduler</div>
+                                <div class="node-desc">Distributed Polling</div>
+                            </div>
+                            <div class="flowchart-line alt-flow"></div>
+                            <div class="arch-node">
+                                <div class="node-circle"><i class="fas fa-lock"></i></div>
+                                <div class="node-label">File Lock Checker</div>
+                                <div class="node-desc">State machine tracking</div>
+                            </div>
+                            <div class="flowchart-line"></div>
+                            <div class="arch-node">
+                                <div class="node-circle highlight"><i class="fas fa-shield-halved"></i></div>
+                                <div class="node-label">Ingested Storage</div>
+                                <div class="node-desc">Exactly-Once Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-impact">
                         <div class="impact-label"><i class="fas fa-chart-line"></i> Business Impact</div>
                         <p>Ensured exactly-once processing and idempotent behavior, <strong>completely eliminating file corruption</strong> across shared network environments.</p>
@@ -265,7 +467,7 @@
             </div>
 
             <div class="skills-container">
-                <div class="skill-category">
+                <div class="skill-category glass-panel">
                     <div class="category-header">
                         <i class="fas fa-server"></i>
                         <h3>Backend & Architecture</h3>
@@ -281,7 +483,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category glass-panel">
                     <div class="category-header">
                         <i class="fas fa-database"></i>
                         <h3>Data & Infrastructure</h3>
@@ -296,7 +498,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category glass-panel">
                     <div class="category-header">
                         <i class="fas fa-code"></i>
                         <h3>Languages & Frontend</h3>
@@ -315,10 +517,10 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container section-fade">
-            <div class="contact-card">
+            <div class="contact-card glass-panel">
                 <div class="contact-content">
                     <span class="section-eyebrow">Get In Touch</span>
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 0.5rem;">Let's Connect</h2>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 0.5rem; font-size: 2.25rem;">Let's Connect</h2>
                     <p class="contact-desc">
                         I'm actively expanding into product-based companies and looking for complex backend/platform engineering roles. If you have an intricate system design challenge, I'd love to talk.
                     </p>
@@ -347,21 +549,22 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="contact-form-container">
                     <form class="contact-form">
                         <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
                             <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
+                            <textarea id="message" placeholder=" " rows="4" required></textarea>
                             <label for="message">Message</label>
-                            <textarea id="message" placeholder="How can we work together?" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -372,7 +575,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <i class="fas fa-layer-group"></i> Krushna Kale
+                <i class="fas fa-network-wired"></i> Krushna Kale
             </div>
             <p class="footer-copyright">&copy; 2026. Engineered with focus and precision.</p>
             <div class="socials">
@@ -382,76 +585,10 @@
         </div>
     </footer>
 
+    <!-- Toast Notification Wrapper -->
+    <div id="toast-container"></div>
+
     <!-- App Scripts -->
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Scroll Progress Bar
-        const scrollBar = document.getElementById('scroll-bar');
-        window.addEventListener('scroll', () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            scrollBar.style.width = scrolled + "%";
-        });
-
-        // Navbar Active State Update on Scroll
-        const sections = document.querySelectorAll('section, header');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 150)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
-            });
-            
-            // Navbar drop shadow on scroll
-            const navbar = document.getElementById('navbar');
-            if(window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Intersection Observer for Fade-In Animations
-        const fadeElements = document.querySelectorAll('.section-fade');
-        const fadeOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
-        const fadeOnScroll = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, fadeOptions);
-
-        fadeElements.forEach(element => {
-            fadeOnScroll.observe(element);
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
